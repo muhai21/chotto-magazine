@@ -1,11 +1,7 @@
 ﻿% ei 2 ta package include kore dio ... \usepackage{lettrine} er pore
 
-
 % \usepackage{pgfplots} 
 % \pgfplotsset{compat=1.18} 
-
-
-
 
 \article{\centering Quantum Computing: Unlocking the Future of Computation}{Sultana Akter}{\today}
 
