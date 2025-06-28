@@ -1,0 +1,83 @@
+% Article 2
+\article{\centering{Ghostwriting in Technical Writing: An Ethical Dilemma }}{Maliha Laheen}{\today}
+\begin{figure}[ht]
+  \centering
+
+  
+  \includegraphics[width=\columnwidth]{gw.png}
+  \caption*{The ghostwriter writing an article while being oblivious of its outcome}
+  \label{gw2}
+\end{figure}
+
+
+
+% Introducing the concept of ghostwriting
+\lettrine[lines=3]{T}{echnical writing}
+involves creating documents like instruction manuals, reports, and guides used in fields such as technology, medicine, or engineering. These documents must be clear and accurate. However, sometimes the person who writes them does not receive credit. This practice, known as ghostwriting, occurs when someone writes a document, but another person’s name, such as a boss or a company, appears as the author. While common, it raises questions about fairness and transparency. Should readers know who wrote the document? This article explores why ghostwriting matters and whether openness could make these documents more trustworthy.
+
+% Exploring the ethical implications
+\section*{The Ethical Core: Is Ghostwriting Dishonest?}
+Ghostwriting can feel misleading. If the person listed as the author did not write the document and lacks deep knowledge of the subject, problems may arise. For instance, a poorly written guide for a medical device could cause harm if it contains errors. On the other hand, ghostwriting can be practical. Companies hire skilled writers to ensure documents are clear and correct, even if the company itself is not an expert.
+
+This creates a balance between honesty and efficiency. Some argue readers should know the writer’s identity to judge the document’s reliability. Others believe the accuracy of the information is more important than who wrote it.
+
+\begin{figure}[ht]
+  \centering
+
+  
+  \includegraphics[width=\columnwidth]{gw2.png}
+  \caption*{A ghost written article with fake promotion and people protesting against that}
+  \label{gw2}
+\end{figure}
+
+
+% Reflecting on the philosophical aspects of authorship
+\section*{Philosophical Reflections: Who Should Get Credit?}
+Typically, the person who writes something is considered the author and is responsible for its content. Ghostwriting changes this dynamic. The writer remains hidden, while someone else takes credit—and responsibility if issues occur. For example, if a manual is unclear and leads to a mistake, who is at fault: the writer or the person named as the author?
+
+One perspective supports ghostwriting if it results in better documents that benefit users. However, another view considers it unfair to conceal the true writer. This raises a question: Does being an author mean doing the work, receiving recognition, or both?
+
+
+% Discussing the challenges faced by ghostwriters
+\section*{The Ghostwriter’s Challenge: Working Without Credit}
+Ghostwriters face a difficult task. They must write accurately and clearly while aligning with the client’s preferences, all without public recognition. This lack of credit can feel unfair—why should someone else be praised for their work?
+
+Ghostwriters also strive to maintain accuracy, sometimes disagreeing with clients to ensure correctness. Since their names are not attached, it can be hard to feel fully accountable. Revealing the writer’s role might help, but it could complicate matters or make the client appear less knowledgeable.
+
+% Presenting a case study to illustrate risks
+\section*{Case Study: When Ghostwriting Causes Problems}
+Consider a scenario where a ghostwriter creates a report about a new medical device, credited to a well-known doctor. If the report contains mistakes and the device fails, people may blame the doctor, who did not write it. This confusion can reduce trust in the report. Had the ghostwriter’s involvement been disclosed, readers might have reviewed it more carefully, potentially avoiding the issue. This example highlights the risks of hiding the true writer.
+
+% Proposing guidelines for ethical ghostwriting
+\section*{Guidelines for Ethical Ghostwriting}
+To make ghostwriting fairer, consider these suggestions:
+\begin{enumerate}
+    \item \textbf{Be Honest}: Whenever possible, indicate who wrote the document, even subtly.
+    \item \textbf{Own the Work}: The credited author should review the document and ensure its accuracy.
+    \item \textbf{Focus on Truth}: Writers should prioritize factual correctness, even if clients suggest otherwise.
+    \item \textbf{Give Some Credit}: Acknowledge the writer’s contribution, even privately.
+\end{enumerate}
+These steps could improve ghostwriting practices for everyone involved.
+
+% Concluding with a balanced perspective
+\section*{Conclusion: Finding the Right Way}
+Ghostwriting is valuable for producing clear documents but raises concerns about fairness and responsibility. Transparency about authorship might be the most honest approach, though it is not always practical. By considering both the benefits and challenges, ghostwriting can be used thoughtfully. The goal is to ensure these documents are reliable and helpful for those who depend on them.
+\begin{figure}[ht]
+  \centering
+
+  
+  \includegraphics[width=\columnwidth]{gw3.png}
+  \caption*{After the guidelines were maintained}
+  \label{gw2}
+\end{figure}
+\begin{figure}[ht]
+  \centering
+
+  
+  \includegraphics[width=\columnwidth]{gw4.png}
+  \caption*{People are now cheerful and the ghostwriter is happy}
+  \label{gw2}
+\end{figure}
+\clearpage 
+\cleardoublepage
+% PASTE ARTICLE 2 CONTENT HERE
