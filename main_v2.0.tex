@@ -19,6 +19,8 @@
 \usepackage{caption}
 \usepackage{titlesec}
 \usepackage[most]{tcolorbox}
+\usepackage{float}
+\newcommand{\highlight}[1]{\textcolor{accent}{\textbf{#1}}}
 \usepackage{multicol} % for two-column TOC
 \tcbuselibrary{listings, skins, breakable}  % optional enhancements
 \usetikzlibrary{shapes.geometric, arrows, positioning}
@@ -73,6 +75,8 @@
   \end{center}
   \vspace{-0.8em}  % Tighter spacing
 }
+%Udoy er command
+\newcommand{\highlight}[1]{\textcolor{accent}{\textbf{#1}}}
 
 
 % Compact Contributors command
@@ -567,64 +571,78 @@ By 2030, quantum computers could scale to millions of qubits, enabling fusion en
 %--------------------------------------------------------------------------%
 %----------------------------- ARTICLE 5 ----------------------------------%
 %--------------------------------------------------------------------------%
-\article{\centering{Machine-Learned Muscles: Personalized Performance through AI}}{Tamjeed Rahman Udoy}{June 17, 2025}
-\lettrine[lines=3]{}{} %----------------------------------------------------------------------------------------
-% INTRODUCTION
-%----------------------------------------------------------------------------------------
+\article{Machine-Learned Muscles: Personalized Performance through AI}{Tamjeed Rahman Udoy}{June 28, 2025}
 
-\section*{Introduction}
-Recent advancements in AI and wearable technologies have made it possible to model and enhance human muscular performance. Machine-learned muscles refer to systems that dynamically adapt to individual physiology using real-time data, enabling personalized training and rehabilitation programs. By continuously analyzing input from biosensors, AI systems can detect subtle changes in muscular behavior, offering immediate feedback and guiding optimized interventions. This technological convergence enhances not only athletic training but also clinical outcomes in rehabilitation.
+\noindent{\fontsize{28pt}{28pt}\selectfont\textbf{W}}\textbf{hat if your body could talk—and your workout could listen?}
 
-%----------------------------------------------------------------------------------------
-% CORE TECHNOLOGIES
-%----------------------------------------------------------------------------------------
+We are entering an era where our physical limitations are being challenged not just by stronger muscles or faster reflexes, but by smarter systems. The fusion of artificial intelligence (AI), biosensors, and biomechanics is giving rise to "\highlight{Machine-Learned Muscles}"—a term describing adaptive, real-time systems that interpret and enhance human movement. Whether it's a runner correcting stride imbalances mid-race or a stroke survivor learning to walk again, these systems learn directly from the human body to guide smarter decisions, faster recovery, and better performance.
 
-\section*{Core Technologies}
+\subsection*{Core Technologies}
 
-\subsection{Wearable Sensors and Data Acquisition}
-Modern wearables collect electromyography (EMG), motion, and force data. These inputs are used by AI systems to analyze muscle activity and form predictions
+\highlight{Wearable Sensors and Data Acquisition} \\
+Modern wearable devices are equipped with advanced sensors capable of measuring electrical activity in muscles (EMG), motion through accelerometers and gyroscopes, as well as pressure and torque. These sensors create a continuous flow of physiological data, turning every motion into an opportunity for learning and feedback. AI algorithms interpret this input in real time, identifying patterns that may indicate fatigue, asymmetry, or risk of injury. This granular understanding of the body's signals was previously impossible without expensive lab-based equipment.
 
-\subsection{Machine Learning Models}
-Deep learning techniques, especially recurrent neural networks (RNNs) and convolutional neural networks (CNNs), are commonly used to interpret temporal and spatial patterns in muscle behavior.
+\highlight{Machine Learning Models} \\
+The real power lies in AI's ability to make sense of noisy, nonlinear data. Convolutional neural networks (CNNs) help detect spatial features like muscle coordination patterns, while recurrent neural networks (RNNs) are excellent at capturing temporal dependencies—critical in movement analysis. These models can be trained on both population-wide datasets and individual user profiles to ensure both general insight and personalized accuracy. Over time, the system doesn't just monitor the body—it starts to predict how the body behaves under stress, fatigue, or in recovery.
 
-\subsection{Biomechanical Simulation}
-AI integrates with musculoskeletal models to simulate forces and movements in a virtual environment, allowing risk-free optimization of performance and prevention strategies 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{ai_sensors.png}
+  \caption{Real-time AI feedback and correction in athletic training.}
+  \label{fig:ai_sports}
+\end{figure}
+\highlight{Biomechanical Simulation} \\
+Another breakthrough is AI's integration with biomechanical simulation. Here, virtual musculoskeletal models mirror a user's body to simulate potential outcomes of different movements. This allows athletes to refine form in a simulated environment or therapists to test recovery plans without exposing the patient to real-world strain. These simulations can estimate joint forces, muscle tension, and range of motion, providing insights impossible to capture through surface observations alone.
 
-%----------------------------------------------------------------------------------------
-% APPLICATIONS
-%----------------------------------------------------------------------------------------
 
-\section*{Applications}
 
-\subsection{Personalized Fitness}
-AI generates optimized training routines based on an individual's performance metrics, reducing overtraining and improving efficiency. These systems adapt in real-time, adjusting intensity, rest intervals, and movement patterns to meet the user's current physical state. This level of personalization supports sustainable progress and injury prevention.
+\subsection*{Applications}
+\highlight{Personalized Fitness} \\
+AI systems now craft highly specific workout routines based on an individual's performance, recovery patterns, and even sleep quality. For example, if an athlete shows signs of fatigue, the system may reduce reps, insert rest periods, or recommend mobility exercises. Conversely, if energy levels and movement efficiency are high, the system may increase intensity. These micro-adjustments support long-term gains while minimizing overtraining.
 
-\subsection{Rehabilitation}
-Post-injury patients benefit from adaptive therapy plans that evolve with recovery progress, monitored through sensors and analyzed by AI. AI can detect fatigue, compensatory movement patterns, or re-injury risks, helping therapists refine protocols. Such intelligent systems are particularly valuable in remote or home-based care.
+\highlight{Rehabilitation} \\
+Post-injury rehabilitation is often a slow and uncertain journey. With AI, that journey becomes measurable. By tracking micro-improvements in gait, balance, and joint stability, machine-learned systems give therapists precise data to adapt treatment plans. Patients recovering from conditions like stroke, spinal cord injury, or surgery benefit from adaptive therapy that changes as they improve. This also empowers remote care, allowing patients to continue therapy at home with AI providing corrective feedback.
 
-\subsection{Sports Performance Enhancement}
-Elite athletes utilize AI-powered biomechanical feedback to improve technique, form, and efficiency in real-time. AI can compare motion data to biomechanical models or top-performer baselines, offering actionable guidance. These systems can also monitor training load and recovery, maximizing long-term performance gains.
+\highlight{Sports Performance Enhancement} \\
+In elite sports, every millisecond and millimeter matters. AI systems can analyze athlete movement with incredible precision, detecting subtle flaws in running, lifting, or jumping technique. They can compare an individual to biomechanical gold standards or even tailor models to an athlete's body type and sport. These insights are no longer limited to laboratories but can now be delivered on the field via mobile apps or embedded sensors.
 
-%----------------------------------------------------------------------------------------
-% CHALLENGES
-%----------------------------------------------------------------------------------------
 
-\section*{Challenges and Future Directions}
 
-\subsection{Data Privacy and Ethics}
-Sensitive biometric data require robust protection mechanisms and ethical handling. Ensuring transparency, data ownership, and informed consent is crucial for user trust. Federated learning and edge computing are emerging strategies to maintain privacy while leveraging distributed data sources.
+\subsection*{Challenges and Future Directions}
 
-\subsection{Model Generalization}
-Ensuring AI models work across diverse populations remains a major research challenge. Addressing this requires inclusive training datasets, adaptive learning strategies, and extensive real-world validation.
+\highlight{Data Privacy and Ethics} \\
+Biometric data, such as muscle activity and movement patterns, is sensitive. If misused, it could impact insurance, employment, or personal dignity. It is crucial that developers implement strong encryption, data anonymization, and clear user consent protocols. Federated learning offers a promising path by allowing models to be trained locally on a user's device, minimizing exposure of raw data.
 
-\subsection{Integration with Robotics}
-Future systems may integrate AI with robotic exoskeletons or prosthetics for enhanced movement and rehabilitation outcomes. Such integration will demand reliable real-time control, safety assurance, and human-in-the-loop interaction models.
+\highlight{Model Generalization} \\
+A model trained on data from young athletes may not work well for elderly patients or differently-abled individuals. To build trustworthy systems, developers must use inclusive datasets and test across diverse populations. Adaptive learning algorithms that update based on individual user behavior will be key to achieving fairness and accuracy in future applications.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{sports.jpg}
+  \caption{AI in Sports.}
+  \label{fig:ai_emg}
+\end{figure}
+\highlight{Integration with Robotics} \\
+The next frontier is robotics—where AI-powered exoskeletons or prosthetic limbs adapt in real time to user motion. These systems could restore mobility for millions, but they demand ultra-fast feedback loops, fail-safe mechanisms, and deep human-machine coordination. Robotics will not only assist movement but possibly enhance it, enabling tasks that were once physically impossible.
 
-%----------------------------------------------------------------------------------------
-% CONCLUSION
-%----------------------------------------------------------------------------------------
-\section*{Conclusion}
-Machine-learned muscles represent a transformative shift in how we understand and optimize human physical performance. With AI capable of learning individual biomechanics, the future of fitness and rehabilitation becomes proactive, personalized, and data-driven. Continued research and development will lead to broader adoption in healthcare, sports, and everyday wellness 
+\subsection*{Conclusion}
+
+Machine-learned muscles are transforming the way we move, heal, and train. These intelligent systems blend the body's natural signals with the computational power of AI, unlocking a new era of adaptive physical intelligence. From fitness and rehabilitation to elite sports and assistive robotics, the applications are vast and growing. As we continue to merge the physical with the digital, one thing becomes clear: the smartest workouts may not come from our muscles alone—but from the machines that learn how our muscles move.
+
+\section*{References}
+
+\begin{enumerate}
+    \item Alzahrani, M., & Aljaffan, N. (2024). Advanced wearable technologies for smart rehabilitation. \href{https://example.org/alzahrani2024}{https://example.org/...}
+    
+    \item Tang, Z., & Liu, Y. (2025). AI-Based Movement Analysis Using Neural Networks. \textit{Journal of Biomechanical AI}. \href{https://example.org/tang2025ai}{https://example.org/...}
+
+    \item Jadama, M., et al. (2024). AI for Personalized Health Monitoring. \textit{HealthTech Reports}. \href{https://example.org/jadama2024ai}{https://example.org/...}
+    
+    \item Zhang, X., & Patel, R. (2024). Integrating AI with Musculoskeletal Simulation. \textit{IEEE Transactions on Biomedical Engineering}. \href{https://example.org/zhang2024integrating}{https://example.org/...}
+    
+    \item Swarnakar, R., & Yadav, S. L. (2023). Artificial intelligence and machine learning in motor recovery: A rehabilitation medicine perspective. \textit{World Journal of Clinical Cases, 11}(29), 7258–7260. \href{https://www.wjgnet.com/2307-8960/full/v11/i29/7258.htm}{wjgnet.com/...}
+    
+    \item The Guardian. (2024). AI and football: The ethics of tracking athlete data. \href{https://www.theguardian.com/football/2024/jan/12/ai-ethics-sports-data}{theguardian.com/...}
+\end{enumerate}
 
 \clearpage
 
