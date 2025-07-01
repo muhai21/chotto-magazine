@@ -1,0 +1,39 @@
+﻿% back page…..section er aage add korbe
+
+
+% CONTRIBUTORS PAGE
+% ====================
+\clearpage
+\section*{Epilogue}
+
+
+As we close this inaugural issue of \textit{The Aevum}, we reflect on the collective effort that brought these ideas to life. This magazine represents more than just articles—it's a testament to curiosity, collaboration, and the courage to explore complex questions.
+ea
+Contributors:
+
+
+\begin{itemize}
+\item Muhaimin Kamran (Roll: 366, Reg: 20240659148) - Content Creator
+\item Tamjeed Rahman Udoy (Roll: 373, Reg: 20240659155) - Proofreader
+\item Maliha Laheen (Roll: 322, Reg: 20240659104) - Editor
+\item Ferdous Ara Fahima (Roll: 323, Reg: 20240659105) - Proofreader
+\item Sultana Akter (Roll: 325, Reg: 20240659107) - Reviewer
+\item Md. Kaif Ibn Zaman (Roll: 358, Reg: 20240659140) - Reviewer
+\item Md. Asif Khan (Roll: 348, Reg: 20240659130) - Content Creator
+\end{itemize}
+
+
+Until next time, stay curious.
+
+
+
+
+\\ \\
+
+
+% Group photo after epilogue text
+\begin{figure}[h]
+  \centering
+   \includegraphics[width=\columnwidth]{group_photo.jpg}
+  \caption*{The creative team behind \textit{The Aevum}}
+\end{figure}
