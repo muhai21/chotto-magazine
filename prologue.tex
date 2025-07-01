@@ -1,0 +1,87 @@
+% Adding required packages for the prologue
+\documentclass[a4paper,10pt,twocolumn]{memoir}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{geometry}
+\usepackage{parskip}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{lettrine}
+\usepackage{tcolorbox}
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{240,240,240}
+\newenvironment{magquote}
+  {\begin{shaded*}\itshape\small}
+  {\end{shaded*}}
+
+% Page geometry consistent with the provided format
+\geometry{
+  a4paper,
+  left=15mm,
+  right=15mm,
+  top=20mm,
+  bottom=15mm,
+  columnsep=8mm
+}
+
+% Color palette consistent with the provided format
+\definecolor{primary}{RGB}{30, 50, 100}
+\definecolor{accent}{RGB}{200, 80, 0}
+\definecolor{light}{RGB}{245, 245, 248}
+\definecolor{dark}{RGB}{40, 40, 45}
+\definecolor{gray}{RGB}{120,120,120}
+
+% Typography settings consistent with the provided format
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.7em}
+\linespread{1.05}
+\frenchspacing
+
+% Header/Footer consistent with the provided format
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize\scshape\color{primary}The Aevum}
+\fancyhead[R]{\footnotesize\color{primary}July 2025}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{accent}\leaders\hrule height \headrulewidth\hfill}}
+
+\begin{document}
+
+% Prologue page
+\begin{center}
+\vspace*{1cm}
+
+{\Huge\bfseries\color{primary}Prologue}
+
+\vspace{0.5cm}
+\tikz{\draw[accent, line width=1pt] (0,0) -- (8cm,0);}
+
+\vspace{0.5cm}
+{\large\scshape\color{dark}Welcome to The Aevum}
+
+\vspace{0.3cm}
+\end{center}
+
+\lettrine[lines=3]{I}{n} a world racing toward the future, where ideas spark revolutions and technology reshapes reality, *The Aevum* emerges as a beacon of curiosity and insight. Our name, derived from the Latin for "eternity," reflects our mission: to explore the timeless questions that connect yesterday, today, and always. From the ethical dilemmas of ghostwriting to the boundless potential of quantum computing, from the dopamine-driven pull of digital platforms to the quiet triumphs of robotics, this inaugural issue captures the pulse of innovation and human ambition.
+
+\begin{magquote}
+"The future belongs to those who believe in the beauty of their dreams." \\
+\hfill --- Eleanor Roosevelt
+\end{magquote}
+
+This magazine is a celebration of bold minds---students, thinkers, and creators who dare to ask "what if?" and "why not?" Through their voices, we uncover stories that challenge, inspire, and illuminate. Whether you're a dreamer tinkering with microcontrollers or a skeptic pondering the ethics of AI, *The Aevum* is your space to reflect, learn, and imagine.
+
+As you turn these pages, let curiosity guide you. The silent revolutions of our time---in technology, science, and thought---are already shaping tomorrow. Join us in this journey to understand, question, and create a future that resonates with purpose.
+
+\vspace{0.3cm}
+{\small\scshape\color{gray}Produced by NeuroNumb}
+
+\vspace*{\fill}
+{\large\itshape\color{dark}To the curious, the courageous, and the creators---welcome to eternity.}
+
+\end{document}
